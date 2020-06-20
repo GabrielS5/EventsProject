@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Statistics</h1>
+        <div>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.StatisticsModel.PublicationsCount)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.StatisticsModel.PublicationsCount)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.StatisticsModel.SubscriptionsCount)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.StatisticsModel.SubscriptionsCount)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.StatisticsModel.PublicationsFinishedCount)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.StatisticsModel.PublicationsFinishedCount)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.StatisticsModel.SubscriptionsFinishedCount)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.StatisticsModel.SubscriptionsFinishedCount)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.StatisticsModel.PublicationsAverageTotalTime)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.StatisticsModel.PublicationsAverageTotalTime)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.StatisticsModel.SubscriptionsAverageTotalTime)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.StatisticsModel.SubscriptionsAverageTotalTime)
+                </dd>
+            </dl>
+        </div>
+    </div>
